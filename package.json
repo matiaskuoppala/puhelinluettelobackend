@@ -7,7 +7,6 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "@powershell Remove-Item -Recurse -Force build && cd ../../osa2/puhelinluettelo && npm run build && @powershell Copy-Item build -Recurse ../../osa3/puhelinluettelobackend",
     "deploy:full": "git add . && git commit -m uibuild && git push"
   },
   "author": "Matias Kuoppala",
